@@ -293,7 +293,7 @@
       justify-content: center;
       align-items: center;
       margin: 20px 2px;
-      min-width: 280px;
+      min-width: 240px;
       min-height: 400px;
     }
     #es-matrix.es-matrix .es-cross__img {
@@ -304,8 +304,11 @@
       justify-content: center;
       align-items: center;
     }
-    #es-matrix.es-matrix .es-cross__img img {
+    #es-matrix.es-matrix .es-cross__img--img {
       max-height: 300px;
+    }
+    #es-matrix.es-matrix .es-cross__img--small {
+      height: 250px;
     }
     #es-matrix.es-matrix .es-cross__text {
       text-align: center;
@@ -384,6 +387,11 @@
       #es-matrix.es-matrix .es-kv__content {
         width: 100%;
       }
+    }
+    @media (max-width: 1000px) {
+      #es-matrix.es-matrix .es-benefits__packshot {
+        width: 100%;
+      }
     } /*# sourceMappingURL=style.css.map */
   </style>
 </head>
@@ -425,7 +433,7 @@
           <li>
             <p>Do 7x więcej nawilżenia<sup>*</sup></p>
           </li>
-          <li>Włosy odczuwalnie miękkie aż do 72 godzin**</li>
+          <li>Włosy odczuwalnie miękkie aż do 72 godzin*</li>
           <li>
             Wzbogacony olejem z awokado <br />
             i kwasem hialuronowym
@@ -450,7 +458,7 @@
           dogłębne nawilżenie
         </p>
         <p class="es-effect__desc">
-          <span class="es-effect__bold">Czy wiesz, że</span>Twoje włosy
+          <span class="es-effect__bold">Czy wiesz, że </span>Twoje włosy
           potrzebują około 15% wody, aby były miękkie, błyszczące i elastyczne?
           Profesjonalny szampon Matrix Food For Soft nie tylko dokładnie
           oczyszcza, ale również doskonale nawilża każdy rodzaj włosów suchych.
@@ -523,6 +531,7 @@
         <div class="es-cross__single">
           <div class="es-cross__img">
             <img
+              class="es-cross__img--img"
               src="./public/assets/cards/matrix/food-for-soft/img/cross-1.png"
               alt=""
             />
@@ -531,12 +540,18 @@
             <p class="es-cross__name">Szampon nawilżający</p>
             <p class="es-cross__desc">do włosów suchych</p>
           </div>
-          <a href="#" target="_blank" class="es-cross__link">Sprawdź</a>
+          <a
+            href="https://friser.pl/matrix/food-for-soft/nawilzajacy-szampon-do-wlosow-300ml"
+            target="_blank"
+            class="es-cross__link"
+            >Sprawdź</a
+          >
         </div>
 
         <div class="es-cross__single">
           <div class="es-cross__img">
             <img
+              class="es-cross__img--img"
               src="./public/assets/cards/matrix/food-for-soft/img/cross-2.png"
               alt=""
             />
@@ -545,12 +560,18 @@
             <p class="es-cross__name">Odżywka nawilżająca</p>
             <p class="es-cross__desc">do włosów suchych</p>
           </div>
-          <a href="#" target="_blank" class="es-cross__link">Sprawdź</a>
+          <a
+            href="https://friser.pl/matrix/food-for-soft/odzywka-ulatwiajaca-rozczesywanie-wlosow-300ml"
+            target="_blank"
+            class="es-cross__link"
+            >Sprawdź</a
+          >
         </div>
 
         <div class="es-cross__single">
           <div class="es-cross__img">
             <img
+              class="es-cross__img--img es-cross__img--small"
               src="./public/assets/cards/matrix/food-for-soft/img/cross-3.png"
               alt=""
             />
@@ -559,18 +580,39 @@
             <p class="es-cross__name">Olejek nawilżający</p>
             <p class="es-cross__desc">do włosów suchych</p>
           </div>
-          <a href="#" target="_blank" class="es-cross__link">Sprawdź</a>
+          <a
+            href="https://friser.pl/matrix/food-for-soft/olejek-do-wlosow-50ml"
+            target="_blank"
+            class="es-cross__link"
+            >Sprawdź</a
+          >
+        </div>
+
+        <div class="es-cross__single">
+          <div class="es-cross__img">
+            <img
+              class="es-cross__img--img es-cross__img--small"
+              src="./public/assets/cards/matrix/food-for-soft/img/cross-4.png"
+              alt=""
+            />
+          </div>
+          <div class="es-cross__text">
+            <p class="es-cross__name">Maska nawilżająca</p>
+            <p class="es-cross__desc">do włosów suchych</p>
+          </div>
+          <a
+            href="https://friser.pl/matrix/food-for-soft/olejek-do-wlosow-50ml"
+            target="_blank"
+            class="es-cross__link"
+            >Sprawdź</a
+          >
         </div>
       </div>
     </div>
     <div class="es-footer">
       <p>
-        <sup>*</sup>Po zastosowaniu systemu Food For Soft składającego się z
-        szamponu, odżywki i olejku w porównaniu z zastosowaniem samego szamponu.
-      </p>
-      <p>
-        <sup>**</sup>Po zastosowaniu systemu Food For Soft składającego się z
-        szamponu, odżywki i olejku w porównaniu z zastosowaniem samego szamponu.
+        <sup>*</sup>Przy użyciu systemu Food For Soft składającego się z
+        szamponu, odżywki lub maski i olejku w porównaniu z samym szamponem.
         Test instrumentalny.
       </p>
     </div>
